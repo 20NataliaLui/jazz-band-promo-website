@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+<title>KindaJazzy</title>
+</head>
+
+<body>
+	<h1>Welcome to KindaJazzy's Home Page!</h1>
+	<p class="hide">Click on a member to learn more about us!</p>
+<!-- The Circle Thumbnail -->
+<div class="flex-container">
+	<div class="smallCircle">
+		<img src="brad.jpg" alt="John Braden, Drums" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="smallCircle">
+		<img src="gird.jpg" alt="Noah Girdler, Keys" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="smallCircle">
+		<img src="lui.jpg" alt="Natalia Lui, Bass" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="smallCircle">
+		<img src="smit.jpg" alt="Dylan Smith, Guitar" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+	<div class="smallCircle">
+		<img src="alle.jpg" alt="Connor Allen, Trombone" onclick="openModal();currentSlide(5)" class="hover-shadow">
+	</div>
+	<div class="smallCircle">
+		<img src="lied.jpg" alt="Josh Liedhaegner, Tenor Sax" onclick="openModal();currentSlide(6)" class="hover-shadow">
+	</div>
+	<div class="smallCircle">
+		<img src="moor.jpg" alt="David Moore, Alto Sax" onclick="openModal();currentSlide(7)" class="hover-shadow">
+	</div>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times</span>
+	<div class="circleContent">
+		<div class="bigCircle">
+			<img src="brad.jpg" alt="John Braden, Drums" class="demo">
+		</div>
+		<div class="bigCircle">
+			<img src="gird.jpg" alt="Noah Girdler, Keys" class="demo">
+		</div>
+		<div class="bigCircle">
+			<img src="lui.jpg" alt="Natalia Lui" class="demo">
+		</div>
+		<div class="bigCircle">
+			<img src="smit.jpg" alt="Dylan Smith, Guitar" class="demo">
+		</div>
+		<div class="bigCircle">
+			<img src="alle.jpg" alt="Connor Allen, Trombone" class="demo">
+		</div>
+		<div class="bigCircle">
+			<img src="lied.jpg" alt="Josh Liedhagner, Tenor Sax" class="demo">
+		</div>
+		<div class="bigCircle">
+			<img src="moor.jpg" alt="David Moore, Alto Sax" class="demo">
+		</div>
+		<!-- Caption text -->
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+	<!-- Previous and Next Buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+		<a class="next" onclick="plusSlides(1)">&#10095</a>
+	</div>
+</div>
+	<br><br>
+	<div id="footer">
+		<h2>Contact us at <a href="kindajazzy@gmail.com" target="_blank">kindajazzy@gmail.com</a><br><br>Follow our <a href="https://www.facebook.com/kindajazzy/" target="_blank">Facebook</a> and <a href="https://www.instagram.com/kindajazzy_/?hl=en">Instagram</a> to stay up to date with our events!</h2>
+	</div>
+</body>
+</html>
